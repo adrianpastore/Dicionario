@@ -1,0 +1,31 @@
+
+<form class="form-inline">
+    <div class="form-group">
+        <label for="findword">Cole ou dígite o texto:</label><br/>
+        <textarea name="texta" id="findword" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <label for="palavraselecio">Palavra Selecionada</label>
+    <input type="text" 
+    autofocus class="form-control" 
+    id="palavraselecio" name="selecao">
+    <button type="submit"class="btn btn-default">
+            <span class="glyphicon glyphicon-search"></span>
+        </button>
+</form>
+
+<div id="resultado">
+
+</div>
+<script id="template" type="text/x-handlebars-template">
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>Definição:</td>
+                <td>{{def}}</td>
+            </tr>
+        </tbody>
+    </table>
+</script>
+
+<script src="js/index.js"></script>
